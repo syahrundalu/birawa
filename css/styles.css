@@ -4402,6 +4402,10 @@ body.search-is-visible .s-header__search-inner {
     padding-top: var(--vspace-5);
 }
 
+.s-content-about .lead{
+    margin-top: -150px;
+    text-align: justify;
+}
 .s-content--blog,
 .s-content--page {
     padding-top : calc(6.5 * var(--space));
