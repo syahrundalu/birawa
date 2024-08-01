@@ -5459,7 +5459,7 @@ body.search-is-visible .s-header__search-inner {
  
  *
  * ------------------------------------------------------------------- */
-.s-expertise {
+ .s-expertise {
     background-color: hsla(127, 8%, 14%, 1);
 	padding-top   : 200px;
     color: #fff;
@@ -5475,6 +5475,56 @@ body.search-is-visible .s-header__search-inner {
 }
 .s-expertise .section-header .text-pretittle, .s-expertise .section-header h1,
 .s-expertise .section-header p {
+    color: #fff ;
+}
+
+.s-expertise__content-main {
+	margin-top: var(--vspace-1_5);
+}
+
+.s-expertise__content-main h3{
+	color: #fff;
+}
+
+.s-expertise__content-main p{
+	text-align: justify;
+}
+
+.s-expertise .s-expertise__content-btn a{
+    border-color: #fff;
+    color: #fff;
+}
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * expertise
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+	.s-expertise {
+		padding-top: var(--vspace-5);
+	}
+}
+
+/* ===================================================================
+ * # keys Different
+ 
+ *
+ * ------------------------------------------------------------------- */
+ .s-keys {
+    background-color: rgb(228, 228, 228);
+	padding-top   : 200px;
+    color: #111;
+	padding-bottom: var(--vspace-5);
+}
+.s-keys .section-header .text-pretittle{
+    margin-bottom: 10px;
+}
+
+.s-keys .section-header .text-pretittle{
+    margin-bottom: 10px;
+    color: var(--color-1);
+}
+.s-keys .section-header .text-pretittle, .s-keys .section-header h1,
+.s-keys .section-header p {
     color: #fff ;
 }
 

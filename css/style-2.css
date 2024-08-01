@@ -2896,10 +2896,10 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-journal {
-	padding-top     : var(--vspace-6);
+	padding-top     : 200px;
 	padding-bottom  : var(--vspace-3);
-	background-color: #181818;
-	color           : rgba(255, 255, 255, 0.6);
+	background-color: #FEF6E6;
+	color           : #111;
 	border-bottom   : 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -2928,6 +2928,10 @@ td:last-child {
 .s-journal .text-display-title,
 .s-journal h3 {
 	color: var(--color-3);
+}
+
+.s-journal p {
+	text-align: justify;
 }
 
 .s-journal .text-pretitle,
