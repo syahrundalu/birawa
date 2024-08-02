@@ -2895,11 +2895,16 @@ td:last-child {
  *
  *
  * ------------------------------------------------------------------- */
-.s-journal {
+ .s-journal {
 	padding-top     : 200px;
 	padding-bottom  : var(--vspace-3);
-	background-color: #FEF6E6;
-	color           : #111;
+	/* background-color: #FEF6E6; */
+	background-image: url(../images/thumbs/about/journalbg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed; /* Membuat background mengikuti scroll */
+	color           : #fff;
 	border-bottom   : 1px solid rgba(255, 255, 255, 0.05);
 }
 
