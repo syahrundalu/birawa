@@ -4406,6 +4406,15 @@ body.search-is-visible .s-header__search-inner {
     margin-top: -150px;
     text-align: justify;
 }
+
+@media screen and (max-width: 800px) {
+    .s-content-about .lead{
+        margin-top: -70px;
+    }
+    .s-content {
+        padding-top : -200px;
+    }
+}
 .s-content--blog,
 .s-content--page {
     padding-top : calc(6.5 * var(--space));
