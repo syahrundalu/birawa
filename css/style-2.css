@@ -3624,7 +3624,7 @@ select::-ms-expand {
   .action {
 	position: fixed;
 	bottom: 50px;
-	left: 50px;
+	right: 50px;
 	width: 50px;
 	height: 50px;
 	background: #fff;
@@ -3639,24 +3639,27 @@ select::-ms-expand {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #a13dea;
+	color: #111;
 	font-size: 2em;
 	transition: .3s ease-in-out;
+	
   }
   .action.active span  {
-	transform: rotate(135deg);
+	transform: rotate(20deg);
   }
   
   .action ul {
 	position: absolute;
 	bottom: 55px;
+	right: 0px;
 	background: #fff;
-	min-width: 250px;
-	padding: 20px;
-	border-radius: 20px;
+	min-width: 180px;
+	padding: 10px 0px;
+	border-radius: 10px;
 	opacity: 0;
 	visibility: hidden;
 	transition: .3s;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.212);
   }
   .action.active ul {
 	bottom: 65px;
@@ -3666,25 +3669,49 @@ select::-ms-expand {
   }
   .action ul li {
 	list-style:none;
-	 text-decoration: none;
+	text-decoration: none;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	padding: 7px 0;
+	padding-left: 20px;
   }
   
   .action ul li:hover {
 	font-weight: 600;
   }
+
+  .action ul li:hover.facebook {
+	background-color: #3b5998;
+	color: white;
+}
+
+.action ul li:hover.linkedin {
+	background-color: #0077b5;
+	color: white;
+}
+
+.action ul li:hover.whatsapp {
+	background-color: #25d366;
+	color: white;
+}
+
+.action ul li:hover.instagram {
+	background-color: #e4405f;
+	color: white;
+}
+
   .action ul li:not(:last-child) {
 	border-bottom: 1px solid rgba(0,0,0,0.1);
   }
-  .action ul li img {
+  .action ul li i {
 	margin-right: 15px;
-	opacity: .2;
+	
 	transform: scale(.7);
   }
-  .action ul li:hover img {  
+  .action ul li:hover i {  
 	opacity: .8;
 	transform: scale(1.0);
   }
+
+  
